@@ -238,7 +238,7 @@ p{
     position: absolute;
     bottom: 12px;
     left: 20px;
-     color:azure;
+    color:azure;
 }
 /* Mera hai ye */
 .con{
@@ -246,12 +246,40 @@ p{
     justify-content: center;
     margin: auto;
     display: flex;
+    flex-wrap:wrap;
     margin-top: 50px;
+}
+
+.con-edge{
+    margin-left:10px;
+    margin-right: 10px;
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid red; */
+}
+
+.con-center{
+    margin-left:10px;
+    margin-right:10px;
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid red; */
+}
+
+.con-center-small{
+    display: none;
 }
 
 .con-heading{
     text-align: center;
     font-size: 40px;
+    margin-top:30px;
 }
 
 .con .con-edge{
@@ -261,11 +289,19 @@ p{
 }
 
 .con-edge img{
-    height: 170px;
-    width: 250px;
+    height: 190px;
+    width: 280px;
     margin-top: 20px;
     margin-bottom: 9px;
-    margin-left: 52px;
+}
+
+.con-edge p, .con-edge h4{
+    margin-left:0px;
+    text-align: left;
+}
+
+.con-center img{
+    width:90%;
 }
 
 .con-edge .img-text{
@@ -278,12 +314,10 @@ p{
 
 .con p{
     font-size: 16px;
-    margin-left: 50px;
 }
 
 .con h4{
     font-size: 20px;
-    margin-left: 49px;
 }
 .con h5{
     font-size: 20px;
@@ -297,13 +331,12 @@ p{
     margin-left: 5px;
 }
 .mera-btn{
-    width: 10%;
+    width: 250px;
     margin: 0 auto;
     padding: 1.5rem 2rem;
     border: 3px solid var(--maincolor);
     text-align: center;
     margin-bottom: 50px;
-    margin-right: 680px;
     margin-top: 45px;
 }
 .mera-btn:hover{
@@ -331,6 +364,21 @@ p{
     color: white;
 }
 
+@media only screen and (max-width:1120px){
+    .con-edge{
+        width:50%;
+    }
+    .con-center-small{
+        width:80%;
+        display:flex;
+        margin-top:40px;
+    }
+
+    .con-center-big{
+        display:none;
+    }
+}
+
 
 .second-background{
     background-image: url("../public/images/2back.png");
@@ -338,16 +386,22 @@ p{
     background-repeat: no-repeat;
     width: 100%;
     height: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color:white;
+}
+
+.inner_second-background{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    margin-left:50%;
+    justify-content: center;
 }
 
 .winter{
     font-size: 50px;
     font-weight: 700;
+    text-align: left;
 }
 
 .second-background-cont{
@@ -356,13 +410,16 @@ p{
     margin-top: 30px;
     font-size: 20px;
     font-weight: 500;
+    text-align: left;
 }
 
 
 .mera-dusra-btn{
     width:250px;
-    margin: 0 auto;
-    padding: 1.5rem 0rem;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-top:50px;
     margin-bottom: 50px;
@@ -376,9 +433,38 @@ p{
 }
 
 .mera-dusra-btn p{
-    text-align: center;
     margin-top: 3px;
     font-weight: 500;
+}
+
+
+@media only screen and (max-width:1300px){
+    .second-background{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner_second-background{
+        width:100%;
+        margin-left:0px;
+        align-items:center
+    }
+
+    .mera-dusra-btn{
+        margin:auto;
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
+
+    .winter{
+        text-align: center;
+    }
+
+    .second-background-cont{
+        text-align: center;
+    }
 }
 
 .news{
@@ -472,7 +558,7 @@ footer{
     width:50%;
     min-width:375px;
     display:flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color:white;
@@ -481,8 +567,9 @@ footer{
 
 .footer2 a{
     text-decoration: none;
-    margin:20px 10px;
-    margin-bottom:30px;
+    margin:20px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .footer3{

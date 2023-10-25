@@ -16,20 +16,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer2">
-                    <p className="p11">
                         <a href="HOME">HOME</a>
                         <a href="PORTFOLIO">PORTFOLIO</a>
                         <a href="CONTACT">CONTACT</a> 
-                    </p>
-
-                    <p className="p12">
                         <a href="ABOUT">ABOUT US </a>
                         <a href="BLOG">BLOG</a>
-                    </p>
-                    <p className="p13">
                         <a href="FORMS">FORMS</a>
                         <a href="PARTNERSHIP">PARTNERSHIP</a>
-                    </p>
                 </div>
                 <div className="footer3">
                     <p>we are in social network</p>
